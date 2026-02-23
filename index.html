@@ -133,12 +133,6 @@
             </div>
         </div>
     </section>
-
-    
-
-[Image of Strategic Transformation Model]
-
-
     <section id="engagement" class="bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-20 items-start">
@@ -200,7 +194,40 @@
             </div>
         </div>
     </section>
+<section id="contact-form" class="bg-white">
+  <div class="max-w-3xl mx-auto px-6 py-20">
 
+    <h2 class="text-4xl font-extrabold text-slate-900 mb-6">
+      Contact Think & Grow BMS
+    </h2>
+
+    <form action="https://formspree.io/f/xvzbvdde" method="POST" class="space-y-6">
+
+      <input type="hidden" name="_subject" value="New Think & Grow BMS Enquiry">
+
+      <div>
+        <label class="block font-bold mb-2">Your Name</label>
+        <input type="text" name="name" required class="w-full p-4 border rounded-xl">
+      </div>
+
+      <div>
+        <label class="block font-bold mb-2">Email</label>
+        <input type="email" name="email" required class="w-full p-4 border rounded-xl">
+      </div>
+
+      <div>
+        <label class="block font-bold mb-2">Message</label>
+        <textarea name="message" rows="6" required class="w-full p-4 border rounded-xl"></textarea>
+      </div>
+
+      <button type="submit" class="bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+</section>
     <footer id="contact" class="bg-slate-900 text-white pt-32 pb-20">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="text-5xl font-extrabold mb-10" data-aos="fade-up">Partner for Impact.</h2>
@@ -208,7 +235,7 @@
                 <div class="grid md:grid-cols-2 gap-12 text-center md:text-left">
                     <div class="space-y-4">
                         <span class="text-emerald-400 font-bold uppercase tracking-widest text-xs block">Executive Inquiries</span>
-                        <a href="mailto:thinkandgrow.bms.4u@gmail.com" class="text-2xl font-bold hover:text-emerald-400 transition break-all">
+                        <a href="#contact-form" class="bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition shadow-md hover:shadow-emerald-200">Contact</a>
                             thinkandgrow.bms.4u@gmail.com
                         </a>
                     </div>
@@ -248,4 +275,5 @@
         });
     </script>
 </body>
+
 </html>
