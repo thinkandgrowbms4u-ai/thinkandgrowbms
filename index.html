@@ -6,7 +6,7 @@
   <title>Think & Grow BMS | Strategic Transformation & Evidence-Based Decision Making</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -22,30 +22,10 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-    .text-gradient {
-      background: linear-gradient(90deg, #10b981, #34d399);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    section { padding: 120px 24px; }
-    .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.05); transition: all 0.4s ease; }
-    .competency-tag {
-      background: #f1f5f9; color: #475569; padding: 8px 16px; border-radius: 8px;
-      font-size: 0.875rem; font-weight: 600; border: 1px solid #e2e8f0;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .competency-tag:hover { transform: translateY(-3px); border-color: #10b981; color: #065f46; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1); }
-    .float-anim { animation: float 6s ease-in-out infinite; }
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-15px); }
-      100% { transform: translateY(0px); }
-    }
-    .hover-lift { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-    .hover-lift:hover { transform: translateY(-10px); box-shadow: 0 20px 40px -15px rgba(0,0,0,0.08); }
-
-    /* Anchor offset for fixed nav */
+    .glass-nav { background: rgba(255,255,255,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.05); transition: all 0.25s ease; }
+    .text-gradient { background: linear-gradient(90deg, #10b981, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hover-lift { transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+    .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -15px rgba(0,0,0,0.10); }
     .anchor { scroll-margin-top: 110px; }
   </style>
 </head>
@@ -56,22 +36,20 @@
   <!-- NAV -->
   <nav class="fixed w-full z-50 glass-nav" id="mainNav">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-      <!-- Brand -->
       <a href="#top" class="flex flex-col items-start">
-        <img src="Tink&Grow.png" alt="Think & Grow Logo" class="h-14 w-auto object-contain mb-1" />
+        <img src="Tink&Grow.png" alt="Think & Grow Logo" class="h-14 w-auto object-contain mb-1">
         <span class="text-lg font-extrabold text-slate-900 leading-tight">Think & Grow</span>
         <span class="text-[11px] uppercase tracking-[0.25em] text-slate-500 font-semibold">
           Business Management Solutions for You
         </span>
       </a>
 
-      <!-- Menu -->
       <div class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-slate-600">
         <a href="#about" class="hover:text-emerald-600 transition">About</a>
         <a href="#competencies" class="hover:text-emerald-600 transition">Competencies</a>
         <a href="#engagement" class="hover:text-emerald-600 transition">Engagement</a>
         <a href="#services" class="hover:text-emerald-600 transition">Services</a>
+        <a href="#case-studies" class="hover:text-emerald-600 transition">Case Studies</a>
         <a href="#workshops" class="hover:text-emerald-600 transition">Workshops</a>
         <a href="#contact-form" class="hover:text-emerald-600 transition">Contact</a>
 
@@ -85,395 +63,265 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero-gradient pt-56 pb-40 text-white relative overflow-hidden">
-
-    <!-- Background subtle accent -->
-    <div class="absolute inset-0 opacity-20">
-        <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-500 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-    </div>
-
-    <div class="max-w-6xl mx-auto px-6 relative z-10" data-aos="fade-up">
-
-        <!-- HEADLINE -->
-        <h1 class="text-5xl lg:text-7xl font-extrabold mb-8 leading-tight">
-
-            From Executive Ambition<br>
-
+  <header class="hero-gradient pt-48 pb-20 text-white relative overflow-hidden anchor">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-7" data-aos="fade-up" data-aos-duration="1100">
+          <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]">
+            From Executive Ambition <br/>
             to <span class="text-gradient">Measurable Impact.</span>
+          </h1>
 
-        </h1>
+          <p class="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
+            Combining MSP® governance, system implementation expertise and doctoral research in evidence-based decision making to deliver structured,
+            accountable and financially justified transformation.
+          </p>
 
-
-        <!-- SUBTEXT -->
-        <p class="text-xl lg:text-2xl text-slate-300 mb-12 max-w-3xl leading-relaxed">
-
-            Combining MSP® governance, system implementation expertise and doctoral research in evidence-based decision making to deliver structured, accountable and financially justified transformation.
-
-        </p>
-
-
-        <!-- AUTHORITY LINE (NEW – important credibility boost) -->
-        <p class="text-sm uppercase tracking-widest text-emerald-400 font-semibold mb-12">
-
-            NHS • Universities • Charities • Government • Enterprise Systems
-
-        </p>
-
-
-        <!-- BUTTONS -->
-        <div class="flex flex-wrap gap-6">
-
+          <div class="mt-10 flex flex-wrap gap-4">
             <a href="#services"
-               class="bg-emerald-600 hover:bg-emerald-500 text-white px-10 py-5 rounded-xl font-bold transition text-lg shadow-lg hover:scale-105">
-
-               Explore Services
-
+               class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg">
+              View Services
             </a>
-
-
-            <a href="https://calendly.com/thinkandgrow-bms-4u/30min"
-               target="_blank"
-               class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-10 py-5 rounded-xl font-bold transition text-lg backdrop-blur-sm">
-
-               Book Consultation
-
+            <a href="#contact-form"
+               class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-xl font-bold transition backdrop-blur-sm">
+              Contact / Enquire
             </a>
-
-
+          </div>
         </div>
 
-
-    </div>
-
-</header>
-
-  <!-- ABOUT -->
-  <section id="about" class="bg-white overflow-hidden anchor">
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14 items-start">
-
-      <!-- Left column (profile card) -->
-      <div class="lg:col-span-5" data-aos="fade-right">
-        <h2 class="text-sm font-bold text-emerald-600 uppercase tracking-[0.2em] mb-4">Professional Profile</h2>
-
-        <h3 class="text-4xl font-extrabold text-slate-900 mb-2"> Violet Swierkot, MSc, MSP®</h3>
-        <p class="text-lg font-bold text-slate-500 mb-8 italic">Doctoral Researcher (DBA) in Evidence-Based Decision Making</p>
-
-        <div class="space-y-4 mb-10">
-          <div class="flex items-center gap-3 text-slate-700 font-medium p-3 bg-slate-50 rounded-xl border border-slate-100 transition hover:border-emerald-200">
-            <i data-lucide="award" class="text-emerald-600 w-5 h-5"></i> MSP® Foundation Certified
-          </div>
-          <div class="flex items-center gap-3 text-slate-700 font-medium p-3 bg-slate-50 rounded-xl border border-slate-100 transition hover:border-emerald-200">
-            <i data-lucide="graduation-cap" class="text-emerald-600 w-5 h-5"></i> MSc Global Project Management
-          </div>
-          <div class="flex items-center gap-3 text-slate-700 font-medium p-3 bg-slate-50 rounded-xl border border-slate-100 transition hover:border-emerald-200">
-            <i data-lucide="search" class="text-emerald-600 w-5 h-5"></i> Doctoral Researcher
+        <div class="lg:col-span-5" data-aos="fade-up" data-aos-delay="150">
+          <div class="grid gap-4">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover-lift">
+              <div class="text-3xl font-extrabold">£10m+</div>
+              <div class="mt-2 text-slate-300">Programmes & portfolios supported</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover-lift">
+              <div class="text-3xl font-extrabold">PMO / Portfolio</div>
+              <div class="mt-2 text-slate-300">Governance, assurance, benefits, delivery oversight</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover-lift">
+              <div class="text-3xl font-extrabold">Impact</div>
+              <div class="mt-2 text-slate-300">CBA / SROI / Funding evidence & outcome frameworks</div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </header>
 
-      <!-- Right column (narrative + tools card) -->
-      <div class="lg:col-span-7" data-aos="fade-left" data-aos-delay="200">
-
-        <div class="prose prose-slate prose-lg max-w-none text-slate-600 leading-relaxed space-y-6">
-          <p>
-            I’m a strategic transformation leader with cross-sector experience delivering complex digital change across healthcare, NHS estates,
-            supply chain, government contracting, and the social impact sector — where governance, financial accountability, and operational
-            precision are critical.
-          </p>
-
-          <p>
-            I bridge executive ambition with disciplined programme delivery. I combine MSP® aligned governance with robust evaluation such as
-            <strong>Cost-Benefit Analysis (CBA)</strong> and <strong>Social Return on Investment (SROI)</strong>, ensuring initiatives are
-            evidence-based, financially justified, and deliver measurable long-term value.
-          </p>
-
-          <p>
-            My doctoral research strengthens how leaders use evidence, data and governance to make better decisions — and how organisations can
-            prove impact to funders, boards and regulators.
-          </p>
-        </div>
-
-        <!-- Tools card (clean + not too much) -->
-        <div class="mt-10 bg-slate-900 text-white rounded-3xl p-8 shadow-xl">
-          <p class="text-emerald-300 font-bold uppercase tracking-widest text-xs mb-6">IT Systems & Platforms</p>
-
-          <div class="space-y-6">
-            <div>
-              <p class="font-bold text-lg mb-2">Enterprise Systems</p>
-              <p class="text-slate-200">Dynamics 365 CRM • Business Central ERP • Salesforce • Planet FM (NHS Estates) • Halo ITSM</p>
+  <!-- ABOUT -->
+  <section id="about" class="bg-white anchor">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <div class="grid lg:grid-cols-12 gap-14 items-start">
+        <!-- LEFT: Tools box -->
+        <div class="lg:col-span-5" data-aos="fade-right">
+          <div class="bg-slate-900 text-white rounded-3xl p-10 shadow-2xl">
+            <div class="text-emerald-300 font-extrabold uppercase tracking-[0.18em] text-xs">
+              IT Systems & Platforms
             </div>
+            <h2 class="mt-4 text-2xl font-extrabold">Enterprise Implementation Experience</h2>
 
-            <div>
-              <p class="font-bold text-lg mb-2">Delivery & Collaboration</p>
-              <p class="text-slate-200">Jira • Monday.com • Microsoft Project • SharePoint • Visio • Microsoft 365</p>
-            </div>
-
-            <div>
-              <p class="font-bold text-lg mb-2">Data, Cloud & AI</p>
-              <p class="text-slate-200">Power BI • Executive Dashboards • Azure Cloud • Copilot • ChatGPT • Gemini • HeyGen</p>
-            </div>
-
-            <details class="bg-white/5 rounded-2xl p-5 border border-white/10">
-              <summary class="cursor-pointer font-semibold text-emerald-200">View full toolset</summary>
-              <div class="mt-4 text-slate-200 leading-relaxed">
-                Oracle Supply Chain • Sage 50 • Exchequer • Cascade HR • CharityLog • Gladstone • NHS System One • Excel • Canva • Cogniti AI
+            <div class="mt-8 space-y-6 text-slate-200">
+              <div>
+                <div class="font-bold text-white">Enterprise Systems</div>
+                <div class="mt-2 leading-relaxed">
+                  Microsoft Dynamics 365 • Business Central • Salesforce • Planet FM (NHS Estates) • Oracle • Halo ITSM • Sage 50 • Exchequer • Cascade HR
+                </div>
               </div>
-            </details>
 
-            <p class="text-slate-300 text-sm pt-1">
-              Full lifecycle delivery: business cases • procurement • supplier management • data migration • governance • implementation • optimisation
-            </p>
+              <div>
+                <div class="font-bold text-white">Delivery & Collaboration</div>
+                <div class="mt-2 leading-relaxed">
+                  Jira • Monday.com • Microsoft Project • SharePoint • Visio • Excel • Microsoft 365
+                </div>
+              </div>
+
+              <div>
+                <div class="font-bold text-white">Data, Cloud & AI</div>
+                <div class="mt-2 leading-relaxed">
+                  Power BI • Executive Dashboards • Azure Cloud • Copilot • ChatGPT • Gemini • HeyGen
+                </div>
+              </div>
+
+              <div class="pt-4 text-slate-300 text-sm">
+                Full lifecycle delivery: business cases • procurement • supplier management • data migration • governance • optimisation
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- RIGHT: About narrative (ONLY ONCE - no duplicates) -->
+        <div class="lg:col-span-7" data-aos="fade-left" data-aos-delay="150">
+          <h2 class="text-sm font-bold text-emerald-600 uppercase tracking-[0.2em]">About the Founder</h2>
+          <h3 class="mt-3 text-4xl font-extrabold text-slate-900">Wioletta Izabela Swierkot, MSc, MSP®</h3>
+          <p class="mt-3 text-lg font-semibold text-slate-500 italic">Doctoral Researcher (DBA) in Evidence-Based Decision Making</p>
+
+          <div class="mt-8 space-y-6 text-slate-700 text-lg leading-relaxed">
+            <p>
+              I’m a strategic transformation leader with 13+ years of cross-sector experience delivering complex change across healthcare,
+              NHS estates, supply chain, government contracting, and the social impact sector — where governance, financial accountability,
+              and operational precision are critical.
+            </p>
+            <p>
+              I bridge executive ambition with disciplined programme delivery. I combine MSP® aligned governance with robust evaluation such as
+              Cost-Benefit Analysis (CBA) and Social Return on Investment (SROI), ensuring initiatives are evidence-based, financially justified,
+              and deliver measurable long-term value.
+            </p>
+            <p>
+              My doctoral research strengthens how leaders use evidence, data and governance to make better decisions — and how organisations can
+              prove impact to funders, boards and regulators.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- COMPETENCIES -->
   <section id="competencies" class="bg-slate-50 anchor">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Core Competencies</h2>
-        <div class="w-20 h-1 bg-emerald-500 mx-auto"></div>
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <h2 class="text-4xl font-extrabold text-slate-900">Core Competencies</h2>
+        <div class="w-20 h-1 bg-emerald-500 mx-auto mt-4"></div>
       </div>
 
-      <div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto" data-aos="zoom-in" data-aos-delay="200">
-        <span class="competency-tag">Strategic Transformation & Programme Governance</span>
-        <span class="competency-tag">Evidence-Based Decision Making</span>
-        <span class="competency-tag">Portfolio & PMO Development</span>
-        <span class="competency-tag">Digital & CRM System Strategy</span>
-        <span class="competency-tag">Impact Measurement (CBA & SROI)</span>
-        <span class="competency-tag">Financial & Social Value Evaluation</span>
-        <span class="competency-tag">Process Optimisation</span>
-        <span class="competency-tag">Stakeholder & Executive Advisory</span>
-        <span class="competency-tag">Funding Strategy & Investment Justification</span>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="120">
+        <div class="bg-white p-8 rounded-2xl shadow hover-lift">
+          <div class="font-extrabold text-slate-900">Programme Governance & MSP® Alignment</div>
+          <div class="mt-2 text-slate-600">Decision cadence, assurance, benefits, RAID, exec reporting.</div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover-lift">
+          <div class="font-extrabold text-slate-900">Evidence-Based Decision Making</div>
+          <div class="mt-2 text-slate-600">Structured evidence use for confident executive decisions.</div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover-lift">
+          <div class="font-extrabold text-slate-900">Funding Evidence & Impact Measurement</div>
+          <div class="mt-2 text-slate-600">CBA, SROI, outcomes frameworks, impact reporting.</div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover-lift">
+          <div class="font-extrabold text-slate-900">Data Strategy & Executive Dashboards</div>
+          <div class="mt-2 text-slate-600">Power BI, KPI frameworks, board-ready packs.</div>
+        </div>
       </div>
     </div>
   </section>
 
- <!-- ENGAGEMENT -->
-<section id="engagement" class="bg-white overflow-hidden anchor">
-  <div class="max-w-7xl mx-auto">
-
-    <div class="grid lg:grid-cols-2 gap-20 items-start">
-
-      <div data-aos="fade-right">
-
-        <h2 class="text-5xl font-extrabold mb-10 leading-tight">
-          Engagement Model
-        </h2>
-
-        <div class="space-y-8 text-slate-700 text-lg leading-relaxed">
-
-          <p class="font-bold text-slate-900 text-xl border-l-4 border-emerald-500 pl-6">
-            Every transformation begins with clarity.
-          </p>
-
-          <p>
-            All engagements start with a structured diagnostic consultation to define strategic objectives,
-            organisational context, risk profile, and measurable success criteria.
-          </p>
-
-          <p>
-            Rather than offering transactional services, I partner with organisations to design structured,
-            governed transformation programmes that deliver sustainable financial and social value.
-          </p>
-
+  <!-- ENGAGEMENT -->
+  <section id="engagement" class="bg-white overflow-hidden anchor">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div data-aos="fade-right">
+          <h2 class="text-5xl font-extrabold mb-8 leading-tight">Engagement Model</h2>
+          <div class="space-y-6 text-slate-700 text-lg leading-relaxed">
+            <p class="font-bold text-slate-900 text-xl border-l-4 border-emerald-500 pl-6">Every transformation begins with clarity.</p>
+            <p>
+              All engagements start with a structured diagnostic consultation to define objectives, context, risk profile,
+              governance maturity, and measurable success criteria.
+            </p>
+            <p>
+              Rather than offering transactional services, I partner with organisations to design structured, governed transformation programmes
+              that deliver sustainable financial and social value.
+            </p>
+          </div>
         </div>
 
+        <div class="space-y-6" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="text-2xl font-extrabold mb-4 text-slate-900">How We Work</h3>
+
+          <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover-lift">
+            <span class="text-emerald-600 font-black text-3xl block mb-2">01</span>
+            <h4 class="font-bold text-xl mb-3">Strategic Assessment</h4>
+            <p class="text-slate-600">Diagnostic review of systems, governance maturity, performance gaps, and investment priorities.</p>
+          </div>
+
+          <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover-lift">
+            <span class="text-emerald-600 font-black text-3xl block mb-2">02</span>
+            <h4 class="font-bold text-xl mb-3">Design & Governance</h4>
+            <p class="text-slate-600">Roadmap, benefits, KPIs, decision cadence, RAID and reporting aligned to strategy and evidence.</p>
+          </div>
+
+          <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover-lift">
+            <span class="text-emerald-600 font-black text-3xl block mb-2">03</span>
+            <h4 class="font-bold text-xl mb-3">Delivery Oversight</h4>
+            <p class="text-slate-600">Hands-on oversight to manage risk, align stakeholders, and sustain improvement.</p>
+          </div>
+        </div>
       </div>
 
-
-      <div class="space-y-6" data-aos="fade-left" data-aos-delay="300">
-
-        <h3 class="text-2xl font-extrabold mb-8 text-slate-900">
-          How We Work
-        </h3>
-
-
-        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover-lift">
-
-          <span class="text-emerald-600 font-black text-3xl block mb-2">01</span>
-
-          <h4 class="font-bold text-xl mb-3">
-            Strategic Assessment
-          </h4>
-
-          <p class="text-slate-600">
-            A focused diagnostic to understand systems, governance maturity, performance gaps,
-            and investment priorities.
+      <div class="mt-16 bg-slate-900 rounded-[2.5rem] p-10 md:p-14 text-white text-center shadow-2xl relative overflow-hidden" data-aos="zoom-out">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+        <div class="relative z-10">
+          <h3 class="text-3xl md:text-4xl font-extrabold mb-5">Investment Approach</h3>
+          <p class="text-slate-300 text-lg max-w-4xl mx-auto leading-relaxed">
+            Engagement scope and investment are determined following consultation and tailored to organisational size, regulatory complexity,
+            and strategic objectives.
           </p>
-
+          <div class="mt-8">
+            <a href="https://calendly.com/thinkandgrow-bms-4u/30min" target="_blank" rel="noopener"
+               class="bg-emerald-600 text-white px-8 py-4 rounded-lg hover:bg-emerald-700 transition shadow-md hover:shadow-emerald-200 font-bold">
+              Book Consultation
+            </a>
+          </div>
         </div>
-
-
-        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover-lift">
-
-          <span class="text-emerald-600 font-black text-3xl block mb-2">02</span>
-
-          <h4 class="font-bold text-xl mb-3">
-            Structured Design & Governance
-          </h4>
-
-          <p class="text-slate-600">
-            A clear roadmap aligned with objectives and measurable performance indicators.
-          </p>
-
-        </div>
-
-
-        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover-lift">
-
-          <span class="text-emerald-600 font-black text-3xl block mb-2">03</span>
-
-          <h4 class="font-bold text-xl mb-3">
-            Implementation Oversight & Optimisation
-          </h4>
-
-          <p class="text-slate-600">
-            Advisory leadership to ensure risk mitigation, alignment, and sustained operational improvement.
-          </p>
-
-        </div>
-
       </div>
-
     </div>
-
-
-    <div class="mt-24 bg-slate-900 rounded-[3rem] p-12 md:p-20 text-white text-center shadow-2xl relative overflow-hidden" data-aos="zoom-out">
-
-      <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-
-      <div class="relative z-10">
-
-        <h3 class="text-4xl font-extrabold mb-8">
-          Investment Approach
-        </h3>
-
-
-        <p class="text-slate-400 text-xl max-w-4xl mx-auto leading-relaxed mb-12">
-
-          Engagement scope and investment are determined following initial consultation
-          and are tailored to organisational size, regulatory complexity, and strategic objectives.
-
-        </p>
-
-
-        <div class="w-24 h-1 bg-emerald-500 mx-auto mb-12"></div>
-
-
-        <div class="mt-10">
-
-          <a href="https://calendly.com/thinkandgrow-bms-4u/30min"
-             target="_blank"
-             class="bg-emerald-600 text-white px-8 py-4 rounded-lg hover:bg-emerald-700 transition shadow-md hover:shadow-emerald-200 font-bold">
-
-            Book Consultation
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- INSIGHTS / BLOG SECTION (ADD THIS NEW SECTION) -->
-<section id="insights" class="bg-slate-900 text-white py-24">
-
-  <div class="max-w-6xl mx-auto px-6 text-center">
-
-
-    <h2 class="text-5xl font-extrabold mb-10">
-
-      Insights, Research and Thought Leadership
-
-    </h2>
-
-
-    <p class="text-slate-300 text-xl max-w-3xl mx-auto mb-12">
-
-      My consultancy is informed by doctoral research and real-world delivery experience across NHS,
-      universities, and charities.
-
-      I publish insights on digital transformation, evidence-based decision making,
-      system implementation, and impact measurement.
-
-    </p>
-
-
-    <a href="https://thinkandgrowbms4u.wixsite.com/my-site-3"
-       target="_blank"
-       class="bg-emerald-600 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-emerald-700 transition shadow-lg">
-
-      View Research & Articles
-
-    </a>
-
-
-  </div>
-
-</section>
+  </section>
 
   <!-- SERVICES -->
-  <section id="services" class="bg-slate-50 py-24 anchor">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-extrabold text-center mb-20">Strategic Advisory and Consulting Services</h2>
+  <section id="services" class="bg-slate-50 anchor">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <h2 class="text-5xl font-extrabold text-center mb-14">Strategic Advisory & Consulting Services</h2>
 
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition">
-          <h3 class="text-2xl font-bold mb-4">Impact and Research for Funding and Grant Success</h3>
+      <p class="text-center text-lg text-slate-600 max-w-4xl mx-auto mb-14">
+        Practical executive-level support for strategy, delivery and measurable impact — from funding evidence and research frameworks
+        to data strategy and programme governance.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Research & Impact for Funding Success</h3>
           <p class="text-slate-600 leading-relaxed">
-            Research, impact frameworks, and evidence to strengthen grant applications, funding bids, and investment cases — including SROI, CBA,
-            outcomes and evaluation design.
+            Evidence packs for grant bids and investment cases: research design, outcomes frameworks, SROI/CBA and measurable indicators.
           </p>
         </div>
 
-        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition">
-          <h3 class="text-2xl font-bold mb-4">Evidence-Based Decision Making and Data Strategy</h3>
+        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Evidence-Based Decision Making & Data Strategy</h3>
           <p class="text-slate-600 leading-relaxed">
-            Executive-level data strategy and decision frameworks to enable confident, evidence-led choices aligned to performance and value.
+            Executive decision support: data strategy, dashboards, prioritisation frameworks, and governance that improves confidence and clarity.
           </p>
         </div>
 
-        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition">
-          <h3 class="text-2xl font-bold mb-4">Strategic Transformation and Programme Advisory</h3>
+        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Programme & Transformation Advisory</h3>
           <p class="text-slate-600 leading-relaxed">
-            MSP® aligned governance, programme design and oversight to improve delivery, accountability, and benefits realisation.
+            Governance, benefits realisation, reporting, assurance and delivery oversight aligned with MSP® and sector standards.
           </p>
         </div>
 
-        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition">
-          <h3 class="text-2xl font-bold mb-4">Impact Measurement and Performance Frameworks</h3>
+        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Impact Measurement & Performance Frameworks</h3>
           <p class="text-slate-600 leading-relaxed">
-            KPIs, dashboards, and reporting frameworks required for funding, governance, regulators, boards and executive oversight.
+            KPI frameworks, benefits tracking, dashboards and reporting packs that satisfy funders, boards and regulators.
           </p>
         </div>
 
-        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition">
-          <h3 class="text-2xl font-bold mb-4">Executive Workshops and Leadership Advisory</h3>
+        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Executive Workshops</h3>
           <p class="text-slate-600 leading-relaxed">
-            Workshops on impact, research, evidence-based decision making and strategic data use for NHS, charities, local authorities and leaders.
+            Workshops on impact, research, evidence-based decision making and strategic use of data for NHS, charities and public sector leaders.
           </p>
         </div>
 
-        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition">
-          <h3 class="text-2xl font-bold mb-4">Grant Readiness and Funding Strategy</h3>
+        <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Grant Readiness & Funding Strategy</h3>
           <p class="text-slate-600 leading-relaxed">
-            Funding readiness: evidence pack creation, impact logic, bid narrative support, and investment case development.
+            Grant readiness support: evidence creation, impact justification, investment case preparation and governance for delivery.
           </p>
         </div>
       </div>
 
-      <div class="text-center mt-20">
+      <div class="text-center mt-14">
         <a href="https://calendly.com/thinkandgrow-bms-4u/30min" target="_blank" rel="noopener"
            class="bg-emerald-600 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-emerald-700 transition shadow-lg">
           Book Strategic Consultation
@@ -481,150 +329,51 @@
       </div>
     </div>
   </section>
-<!-- CASE STUDIES -->
-<section id="case-studies" class="bg-slate-50 py-24">
 
-<div class="max-w-7xl mx-auto px-6">
+  <!-- CASE STUDIES -->
+  <section id="case-studies" class="bg-white anchor">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <h2 class="text-5xl font-extrabold text-center mb-14">Case Studies</h2>
 
-<h2 class="text-5xl font-extrabold text-center mb-20">
-Selected Case Studies: Measurable Transformation and Impact
-</h2>
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="bg-slate-50 p-10 rounded-3xl border border-slate-100 hover-lift">
+          <h3 class="text-2xl font-extrabold mb-3">Evaluation & Impact</h3>
+          <p class="text-slate-700 font-bold">Essex County Council — Family Innovation Fund (Early Help)</p>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Independent evaluation of an Early Help innovation programme designed to test and embed approaches that prevent escalation,
+            improve outcomes, and strengthen whole-system delivery.
+          </p>
+          <ul class="mt-6 space-y-2 text-slate-600">
+            <li>• Impact and outcomes narrative for stakeholders</li>
+            <li>• Learning themes to improve delivery and commissioning</li>
+            <li>• Evidence base to justify future investment decisions</li>
+            <li>• Practical recommendations and next-step priorities</li>
+          </ul>
+        </div>
 
+        <div class="bg-slate-900 text-white p-10 rounded-3xl shadow-2xl hover-lift">
+          <h3 class="text-2xl font-extrabold mb-3">NHS Estates Transformation</h3>
+          <p class="mt-4 text-slate-300 leading-relaxed">
+            Led NHS Estates digital transformation programme — governance and reporting visibility across 120 projects,
+            increasing system utilisation by 25% and strengthening executive oversight across five hospitals.
+          </p>
+          <p class="mt-5 text-slate-300 leading-relaxed">
+            Delivered an £8m estates backlog programme enabling prioritisation of capital investment using data-driven condition survey analysis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="grid md:grid-cols-2 gap-12">
-
-
-<!-- CASE STUDY 1 NHS ESTATES -->
-
-<div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition">
-
-<h3 class="text-2xl font-bold mb-6">
-NHS Estates Digital Transformation Programme
-</h3>
-
-<p class="text-slate-600 mb-6">
-
-Led digital transformation across NHS Estates, strengthening governance, system utilisation and executive visibility across multiple hospital sites.
-
-</p>
-
-
-<h4 class="font-bold mb-2">Key Outcomes:</h4>
-
-<ul class="list-disc pl-6 text-slate-600 space-y-2">
-
-<li>
-Delivered digitalisation and governance across
-<strong>120+ estates projects</strong>
-</li>
-
-<li>
-Strengthened asset management system
-<strong>Planet FM</strong>
-and increased utilisation by
-<strong>25%</strong>
-</li>
-
-<li>
-Improved executive reporting and oversight across
-<strong>five hospitals</strong>
-</li>
-
-<li>
-Delivered
-<strong>£8 million estates backlog programme</strong>
-using data-driven condition survey analysis
-</li>
-
-<li>
-Enabled prioritisation of capital investment based on evidence and risk
-</li>
-
-</ul>
-
-</div>
-
-
-
-<!-- CASE STUDY 2 ESSEX IMPACT -->
-
-<div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition">
-
-<h3 class="text-2xl font-bold mb-6">
-Impact Evaluation and Economic Case Development – Essex County Council Programme
-</h3>
-
-
-<p class="text-slate-600 mb-6">
-
-Led programme evaluation, impact measurement and economic analysis to support funding continuation and demonstrate public sector value.
-
-</p>
-
-
-
-<h4 class="font-bold mb-2">Key Outcomes:</h4>
-
-<ul class="list-disc pl-6 text-slate-600 space-y-2">
-
-<li>
-Programme supported over
-<strong>11,000 service users</strong>
-</li>
-
-<li>
-<strong>Over 90% showed measurable improvement</strong>
-in resilience and wellbeing
-</li>
-
-<li>
-Demonstrated
-<strong>128% Return on Investment</strong>
-</li>
-
-<li>
-Strengthened evidence base supporting continued funding
-</li>
-
-<li>
-Provided economic justification for public sector investment
-</li>
-
-</ul>
-
-</div>
-
-
-</div>
-
-
-
-<div class="text-center mt-20">
-
-<a href="https://calendly.com/thinkandgrow-bms-4u/30min"
-
-class="bg-emerald-600 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-emerald-700 transition shadow-lg">
-
-Discuss Your Transformation
-
-</a>
-
-</div>
-
-
-
-</div>
-
-</section>
   <!-- WORKSHOPS -->
-  <section id="workshops" class="bg-white py-24 anchor">
-    <div class="max-w-6xl mx-auto px-6">
+  <section id="workshops" class="bg-white anchor">
+    <div class="max-w-6xl mx-auto px-6 py-24">
       <h2 class="text-4xl font-extrabold mb-10 text-center">
-        Executive Workshops: Impact, Data and Evidence-Based Decision Making
+        Executive Workshops: Impact, Data & Evidence-Based Decision Making
       </h2>
 
       <video controls muted class="w-full rounded-2xl shadow-xl">
-        <source src="Workshops Impact Video.mp4" type="video/mp4" />
+        <source src="Workshops Impact Video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
@@ -642,20 +391,21 @@ Discuss Your Transformation
 
   <!-- CONTACT (LAST) -->
   <section id="contact-form" class="bg-white anchor">
-    <div class="max-w-3xl mx-auto px-6 py-20">
-      <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Contact Think & Grow BMS</h2>
+    <div class="max-w-3xl mx-auto px-6 py-24">
+      <h2 class="text-4xl font-extrabold text-slate-900 mb-3">Contact Think & Grow BMS</h2>
+      <p class="text-slate-600 mb-10">Share a short overview of your goals and I’ll respond with next steps.</p>
 
       <form action="https://formspree.io/f/xvzbvdde" method="POST" class="space-y-6">
-        <input type="hidden" name="_subject" value="New Think & Grow BMS Enquiry" />
+        <input type="hidden" name="_subject" value="New Think & Grow BMS Enquiry">
 
         <div>
           <label class="block font-bold mb-2">Your Name</label>
-          <input type="text" name="name" required class="w-full p-4 border rounded-xl" />
+          <input type="text" name="name" required class="w-full p-4 border rounded-xl">
         </div>
 
         <div>
           <label class="block font-bold mb-2">Email</label>
-          <input type="email" name="email" required class="w-full p-4 border rounded-xl" />
+          <input type="email" name="email" required class="w-full p-4 border rounded-xl">
         </div>
 
         <div>
@@ -667,6 +417,12 @@ Discuss Your Transformation
           Send Message
         </button>
       </form>
+
+      <div class="mt-10 text-slate-600">
+        Prefer to book a call?
+        <a class="text-emerald-700 font-bold hover:underline" target="_blank" rel="noopener"
+           href="https://calendly.com/thinkandgrow-bms-4u/30min">Schedule here →</a>
+      </div>
     </div>
   </section>
 
@@ -682,28 +438,13 @@ Discuss Your Transformation
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     lucide.createIcons();
+    AOS.init({ duration: 1000, once: true, easing: 'ease-out-cubic' });
 
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-out-cubic'
-    });
-
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function() {
       const nav = document.getElementById('mainNav');
-      if (window.scrollY > 50) {
-        nav.classList.add('py-2', 'shadow-lg');
-      } else {
-        nav.classList.remove('py-2', 'shadow-lg');
-      }
+      if (window.scrollY > 50) nav.classList.add('shadow-lg');
+      else nav.classList.remove('shadow-lg');
     });
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
